@@ -5,7 +5,12 @@ using Quartz.Spi;
 
 namespace ConsoleHealthCheck.Services
 {
-    public class SchedulerService
+    public interface ISchedulerService
+    {
+        public Task ScheduleJob(string consoleName, string cronExpression);
+        public Task StartAsync();
+    }
+    public class SchedulerService : ISchedulerService
     {
         private readonly ISchedulerFactory _schedulerFactory;
         private readonly IJobFactory _jobFactory;
