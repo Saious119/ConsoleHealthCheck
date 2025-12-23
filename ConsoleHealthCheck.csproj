@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Discord.Net" Version="3.17.1" />
-      <PackageReference Include="Quartz.Jobs" Version="3.13.1" />
+      <PackageReference Include="Discord.Net" Version="3.18.0" />
+      <PackageReference Include="Quartz.Jobs" Version="3.15.1" />
     </ItemGroup>
 
 </Project>
